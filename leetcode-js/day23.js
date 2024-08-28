@@ -69,10 +69,11 @@ function countSubIslands(grid1, grid2) {
         }
     }
 
-    return subIslandCount;
+    return subIslandCount; 
+    
+
 }
 
-// Example usage:
 let grid1 = [
     [1, 1, 1, 0, 0],
     [0, 1, 1, 1, 1],
@@ -89,4 +90,4 @@ let grid2 = [
     [0, 1, 0, 1, 0]
 ];
 
-console.log(countSubIslands(grid1, grid2));  // Output: 3
+console.log(countSubIslands(grid1, grid2));  
