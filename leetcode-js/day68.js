@@ -39,3 +39,20 @@ Explanation: All the black balls are already grouped to the right.
 
 
 
+var minimumSteps = function(s) {
+
+    let swipes = 0;
+    let setBlackBalls = 0;
+
+    for(let i=0; i<s.length; i++){
+        const index = s.length-i-1;
+        
+        if(s[index] === "1"){
+            swipes += (i-setBlackBalls);
+            setBlackBalls++;
+            
+        }
+    }
+
+    return swipes;
+};
